@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/mangaLogo.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/8477320659.js" crossorigin="anonymous" defer></script>
+    <title>Manga Store</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div id="homeContainer"><i class="fa-solid fa-house"></i></div>
+
+        <h1>MANGA STORE</h1>
+        
+        <div id="cartContainer"><i class="fa-solid fa-cart-shopping"></i><span id="quantity">5</span></div>
+
+    </nav>
+
+    <div class="genresContainer" id="genresContainer">
+        <ul id="genresUlLi">
+            <li id="todos">Todos</li>
+            <li data-category="accion">Acción</li>
+            <li data-category="misterio">Misterio</li>
+            <li data-category="romance">Romance</li>
+            <li data-category="fantasia">Fantasía</li>
+        </ul>
+        <div id="backArrow"><i class="fa-solid fa-reply"></i></div>
+    </div>
+
+    <section>
+
+        <div class="productsContainer" id="productsContainer"></div>
+
+    </section>
+
+    <div class="outerModal" id="outerModal">
+
+        <div class="modalContainer">
+            <div class="modalTitle">
+                <h3>CARRITO DE COMPRAS</h3>
+            </div>
+
+            <div class="innerModal"></div>
+
+            <p id="cartStatus">Carrito vacío</p>
+            <div class="purchaseDetails">
+                <div id="purchaseDetails">
+                    <h4>Detalles de compra</h4>
+                    <p id="subtotal">Subtotal: $2400</p>
+                    <div class="modalButtons">
+                        <button id="btnBuy">COMPRAR</button>
+                        <button id="btnKeepBuying">SEGUIR COMPRANDO</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <span class="closeModal" id="closeModal1">X</span>
+
+    </div>
+
+    <div class="checkoutOuterModal" id="checkoutOuterModal">
+
+        <div class="checkoutModalContainer">
+            <div class="checkoutModalTitle">
+                <h3>INGRESE SUS DATOS</h3>
+            </div>
+
+            <form class="checkoutInnerModal">
+
+                <div class="checkoutFormContainer">
+
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="email" placeholder="Correo electrónico">
+                    <input type="text" placeholder="Número de documento">
+                    <input type="text" placeholder="Número de tarjeta">
+                    <input type="text" placeholder="Domicilio">
+
+                    <div class="checkoutButton">
+                        <button id="btnCheckout">Finalizar compra</button>
+                    </div>
+
+                </div>
+                
+            </form>
+
+        </div>
+
+        <span class="closeModal" id="closeModal2">X</span>
+
+    </div>
+
+    <div class="purchaseSuccessfulOuterModal" id="purchaseSuccessfulOuterModal">
+
+        <div class="purchaseSuccessfulModalContainer">
+            <span><i class="fa-solid fa-check"></i></span>
+            <p>¡Compra realizada con éxito!</p>
+        </div>
+
+    </div>
+ 
+</body>
+
+</html>
